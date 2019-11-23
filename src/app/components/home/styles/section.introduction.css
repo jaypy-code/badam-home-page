@@ -1,0 +1,93 @@
+section#introduction {
+    margin: 10vh;
+    margin-bottom: 50px;
+}
+
+section#introduction img {
+    width: 40vw;
+    height: auto;
+}
+
+section#introduction div.content {
+    margin-right: 10%;
+    max-width: 600px;
+}
+
+section#introduction div.content div.head-1 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+section#introduction div.content a.button {
+    display: block;
+    margin-top: 40px;
+    margin-right: auto;
+    text-decoration: none;
+    border-radius: .4rem;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #56C288;
+    color: #fff;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    transition: all .2s;
+}
+
+section#introduction div.content a.button:hover {
+    transform: scale(1.03);
+    transition: all .2s;
+}
+
+section#introduction div.content a.social {
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #F1F3F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+section#introduction div.content a.social img {
+    width: 20px;
+    height: 20px;
+    transition: all .2s;
+}
+
+section#introduction div.content a.social:hover img {
+    transform: scale(1.2);
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 1100px) {
+    section#introduction {
+        flex-direction: column;
+    }
+    section#introduction img {
+        width: 60vw;
+        max-width: 500px;
+    }
+    section#introduction div.content {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section#introduction div.content div.title-color {
+        font-size: 2rem;
+    }
+    section#introduction div.content div.details-color {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section#introduction {
+        margin: 10vh 5vh;
+    }
+}

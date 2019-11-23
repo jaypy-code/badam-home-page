@@ -1,0 +1,207 @@
+section.search {
+    position: relative;
+    height: 350px;
+    padding-top: 100px;
+    padding-right: 15%;
+    background-color: #fed271;
+    box-shadow: 0 2px 4px rgba(104, 210, 164, 0.548);
+}
+
+section.search::after {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background-image: url("/assets/faq.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 60%;
+}
+
+section.search h2 {
+    color: #314351;
+    margin-top: -30px;
+}
+
+section.search div.search-container {
+    position: relative;
+    width: 600px;
+    z-index: 1;
+}
+
+section.search div.search-container svg {
+    position: absolute;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+section.search input {
+    position: relative;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 12px 10px;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+section.search div.categories {
+    margin-right: 2%;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+section.search div.categories span {
+    margin-left: 5%;
+    cursor: pointer;
+    color: #556575;
+    transition: all .2s;
+}
+
+section.search div.categories span:hover {
+    text-decoration: underline;
+    color: #314351;
+    transition: all .2s;
+}
+
+section.faq {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #f1f3f5;
+    padding: 50px 0;
+}
+
+div.faq {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 60vw;
+    border-radius: .4rem;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    transition: all .2s;
+}
+
+div.faq:not(.open) {
+    cursor: pointer;
+}
+
+div.faq:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    transition: all .2s;
+}
+
+div.faq.open{
+    margin: 20px 0;
+    border-radius: .4rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    transition: all .2s;
+}
+
+div.faq div.head {
+    background-color: #fff;
+}
+
+div.faq.open div.head {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+}
+
+div.faq div.flex.wrap {
+    margin-top: -10px;
+}
+
+div.faq div.flex.wrap span {
+    margin-left: 10px;
+    color: #556575;
+}
+
+div.faq div.more {
+    margin-right: auto;
+    margin-top: auto;
+}
+
+div.faq div.views::after {
+    content: "بازدید";
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+div.faq div.score, div.faq div.content {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s;
+}
+
+div.faq.open div.score, div.faq.open div.content {
+    height: auto;
+    opacity: 1;
+    pointer-events: all;
+    transition: all .1s;
+}
+
+div.faq div.score {
+    margin-right: auto;
+}
+
+div.faq.open div.score{
+    margin-top: 20px;
+}
+
+div.faq div.score span {
+    margin-left: 20px;
+}
+
+div.faq div.score button {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #556575;
+    transition: all .2s;
+}
+
+div.faq div.score button:hover {
+    color: #1292EE;
+    border: 1px solid #93A1B0;
+    transition: all .2s;
+}
+
+div.pages{
+    margin-top: 50px;
+}
+
+div.page{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: #5565752a;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;;
+}
+
+div.page:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    transition: all .2s;;
+}
+
+div.page.active{
+    background-color: #FFC555;
+    transition: all .2s;
+}

@@ -1,0 +1,107 @@
+section#services {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    z-index: 1;
+    background-color: #F9FAFA;
+}
+
+section#services div.content div.head-2 {
+    margin-bottom: 20px;
+}
+
+section#services div.line {
+    width: 1px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: 140px;
+}
+
+section#services div.services {
+    padding: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+section#services div.service {
+    width: 350px;
+    margin: 30px 10px;
+    text-align: center;
+    transition: all .2s;
+}
+
+section#services div.service:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+section#services div.service:hover div.icon {
+    margin-bottom: -15px;
+    margin-top: 15px;
+    transition: all .2s;
+}
+
+section#services div.service div.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+section#services div.service div.icon svg {
+    width: 60px;
+    height: 60px;
+}
+
+section#services div.service div.icon.pink svg {
+    fill: #F23459;
+}
+
+section#services div.service div.icon.gold svg {
+    fill: #FAB347;
+}
+
+section#services div.service div.icon.green svg {
+    fill: #56C288;
+}
+
+section#services div.service div.icon.indigo svg {
+    fill: #527CEB;
+}
+
+section#services div.service h3 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #405261;
+    font-size: 1.4rem;
+}
+
+section#services div.service p {
+    width: calc(100% - 50px);
+    color: #748494;
+    font-size: 1.2rem;
+}
+
+section#services div.button {
+    background-color: #1292EE;
+    color: #fff;
+    padding: .75rem 4.375rem;
+    border-radius: .75rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+section#services div.button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 992px) {
+    section#services div.content {
+        width: 80%;
+    }
+    section#services div.line {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+<app-header></app-header>
+<main>
+    <section class="flex nowrap c-ai">
+        <div class="head">
+            <h1 [ngStyle]="{'color': '#fff'}">مرکز دانلود شما</h1>
+            <p [ngStyle]="{'color': '#fff'}">شما می توانید افزونه ها و برنامه های مورد نیاز خود را دانلود کنید.</p>
+        </div>
+        <div class="image"></div>
+    </section>
+    <div class="flex wrap c-jc">
+        <div class="app flex nowrap">
+            <div class="image"
+                [ngStyle]="{'background-image': 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEtd-Z_EnHIq_PikthxHvL5tfYT8QZq1IHFN0bZ_URq5dQuamXmQ&s)'}">
+            </div>
+            <div class="flex column">
+                <h3>عنوان برنامه</h3>
+                <p>توضیحات برنامه</p>
+                <button>دانلود</button>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

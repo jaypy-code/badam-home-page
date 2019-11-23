@@ -1,0 +1,128 @@
+section.contact-us {
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+}
+
+section.contact-us div.info {
+    position: relative;
+    max-width: 400px;
+    margin-left: 5vw;
+    background-color: #1292EE;
+    color: #fff;
+    padding: 20px;
+    border-radius: .4rem;
+}
+
+section.contact-us div.info img {
+    position: relative;
+    width: 100%;
+    border-radius: .4rem;
+}
+
+section.contact-us div.info div.flex {
+    margin-top: 20px;
+}
+
+section.contact-us div.info div.flex p{
+    margin: 5px 0;
+}
+
+section.contact-us div.form {
+    color: #000;
+    text-align: right;
+    padding: 20px;
+    border-radius: .4rem;
+    max-width: 400px;
+}
+
+section.contact-us div.form p {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+section.contact-us input, section.contact-us textarea {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: .4rem;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-bottom: 20px;
+    resize: vertical;
+    transition: all .2s;
+}
+
+section.contact-us input[type="email"] {
+    direction: ltr;
+}
+
+section.contact-us textarea {
+    height: 100px;
+}
+
+section.contact-us input::placeholder, section.contact-us textarea::placeholder {
+    text-align: right;
+}
+
+section.contact-us input:focus, section.contact-us textarea:focus {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+section.contact-us button {
+    background-color: #1292EE;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: -30px;
+    z-index: 1;
+    transition: all .2s;
+}
+
+section.contact-us button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 600px) {
+    section.contact-us div.form {
+        margin-right: 0 !important;
+        width: 60vw !important;
+    }
+    section.contact-us div.info {
+        width: 80vw !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section.contact-us {
+        flex-direction: column-reverse;
+        height: 1000px;
+    }
+    section.contact-us div.info {
+        margin-left: 0;
+        margin-top: -60px;
+        width: 100vw;
+    }
+    section.contact-us div.form {
+        margin-top: -50px !important;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    section.contact-us div.form {
+        margin-top: 150px;
+    }
+}

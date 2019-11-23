@@ -1,0 +1,37 @@
+<button id="goUp" (click)="goTop()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <path d="M8 24l2.83 2.83L22 15.66V40h4V15.66l11.17 11.17L40 24 24 8 8 24z" /></svg>
+</button>
+<footer class="flex column">
+    <div class="flex wrap">
+        <div class="flex column">
+            <img src="https://zeus.ir/files/News/onestarenamad-0.jpg" alt="Enamad">
+        </div>
+        <div class="flex column">
+            <a routerLink="/page/download">دانلود</a>
+            <a (click)="viewTo('features')">امکانات بادام</a>
+            <a (click)="viewTo('plans')">سرویس ها و تعرفه ها</a>
+        </div>
+        <div class="flex column">
+            <a routerLink="/page/about">درباره ما</a>
+            <a routerLink="/page/contact">تماس با ما</a>
+            <a routerLink="/page/faq">سوالات متداول</a>
+            <a href="http://team.rayda.ir" target="_blank">وبلاگ رایدا</a>
+        </div>
+        <div class="flex column" style="margin-left: 30px; margin-right: auto; margin-top: -10px; max-width: 300px;">
+            <p><strong>آدرس : </strong><span>اراک، بلوار شهدای دولت ، بلوار کشاورز ، دانشگاه فنی حرفه ای
+                    امیرکبیر</span></p>
+            <p><strong>شماره تماس :&zwnj; </strong><span>08633680073</span></p>
+            <p><strong>آدرس ایمیل :&zwnj; </strong><span>mail[at]rayda[dot]ir</span></p>
+        </div>
+        <div *ngIf="database.posts.length != 0" class="flex column" style="margin-left: 10%;">
+            <span>آخرین مطالب وبلاگ</span>
+            <a *ngFor="let item of database.posts" [href]="item['link']" target="_blank">{{item['title']}}</a>
+        </div>
+    </div>
+    <section class="copyright flex nowrap">
+        <div class="copyright flex nowrap c-ai">
+            &copy; 1398 | تمامی حقوق برای شرکت عصر ارتباطات دهکده محفوظ است.
+        </div>
+    </section>
+</footer>

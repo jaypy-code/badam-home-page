@@ -1,0 +1,34 @@
+div.content div.head-1{
+    font-size: 3rem;
+}
+
+div.content div.head-2{
+    font-size: 2.5rem;
+}
+
+div.content div.head-3{
+    font-size: 2rem;
+}
+
+div.content div.head-4{
+    font-size: 1.5rem;
+}
+
+div.content div.head-5-5{
+    font-size: 1.25rem;
+}
+div.content div.head-5, div.content div.head-normal{
+    font-size: 1rem;
+}
+
+div.content div.head-6{
+    font-size: 0.5rem;
+}
+
+div.content div.title-color{
+    color: #314351;
+}
+
+div.content div.details-color{
+    color: #405261;
+}

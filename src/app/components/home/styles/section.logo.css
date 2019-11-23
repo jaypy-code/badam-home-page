@@ -1,0 +1,23 @@
+section#logos {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+section#logos div.content div.details-color{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+section#logos div.flex{
+    margin-right: auto;
+}
+
+section#logos img {
+    margin: 20px 30px;
+    width: 110px;
+}
+
+section#logos img.fani-herfeie {
+    height: 80px;
+    width: auto;
+}

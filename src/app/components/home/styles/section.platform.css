@@ -1,0 +1,26 @@
+section#platform{
+    margin: 50px 15vh;
+    padding: 50px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition: margin 0.2s;
+}
+section#platform div.flex.wrap{
+    margin-top: 30px;
+}
+section#platform img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    transition: all .2s;
+}
+
+section#platform img:hover{
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 660px) {
+    section#platform{
+        margin: 50px 5vh;
+    }
+}

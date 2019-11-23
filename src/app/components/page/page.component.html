@@ -1,0 +1,19 @@
+<div class="background"></div>
+<app-header theme="default border"></app-header>
+<main *ngIf="data != null">
+    <div *ngIf="data != null">
+        <section class="flex nowrap c-ai" [ngClass]="{'sticky': data['head']['sticky'] == true}"
+            [ngStyle]="{'background-color': data['head']['color']['background']}">
+            <div class="head content">
+                <h2 [ngStyle]="{'color': data['head']['color']['text']}">{{data['head']['title']}}</h2>
+                <p [ngStyle]="{'color': data['head']['color']['text']}">{{data['head']['description']}}</p>
+            </div>
+            <div class="image" [ngStyle]="{'background-image': 'url('+data['head']['image']+')'}"></div>
+        </section>
+        <div class="body" [innerHtml]="data['body']"></div>
+    </div>
+</main>
+<main class="loading" *ngIf="data == null">
+    <div class="loading"></div>
+</main>
+<app-footer></app-footer>

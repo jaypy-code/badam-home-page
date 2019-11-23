@@ -1,0 +1,80 @@
+section#plans{
+    padding: 100px 0;
+    background-color: #ffc2b6;
+    width: 100vw;
+}
+
+section#plans div.content{
+    max-width: 600px;
+    margin: 0 30px;
+}
+
+section#plans div.plans{
+    position: relative;
+    top: 50px;
+}
+
+section#plans div.plan{
+    width: 550px;
+    margin: 0 30px;
+}
+
+section#plans div.line{
+    position: relative;
+    width: 2px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+section#plans div.plan div.head{
+    max-width: 90%;
+}
+
+section#plans div.plan div.head svg{
+    width: 70px;
+    height: 70px;
+    fill: #F06A4E;
+}
+
+section#plans div.plan div.head p:not(.content){
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+section#plans div.plan div.head p svg{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    margin-left: 10px;
+    fill: #527CEB;
+}
+
+section#plans div.plan div.head button{
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    border-radius: .4rem;
+    margin-top: 10px;
+    margin-right: auto;
+    background-color: #527CEB;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1201px) {
+    section#plans div.plan{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    section#plans div.plans{
+        flex-direction: column;
+    }
+    section#plans div.line{
+        width: auto;
+        height: 2px;
+        margin: 50px 0;
+    }
+}

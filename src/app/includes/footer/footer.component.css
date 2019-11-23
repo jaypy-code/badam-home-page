@@ -1,0 +1,97 @@
+footer {
+    width: 100vw;
+    padding-top: 60px;
+    background-color: #405261;
+}
+
+footer div.flex.column {
+    z-index: 1;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+footer div.flex.column img {
+    width: 150px;
+    border-radius: .4rem;
+}
+
+footer div.flex.column:first-child {
+    margin-right: 10%;
+}
+
+footer div.flex.column a {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+footer div.flex.column a:hover{
+    color: #eee;
+    text-decoration: underline;
+    transition: all .2s;
+}
+
+footer div.flex.column strong {
+    color: #fff;
+}
+
+footer div.flex.column span {
+    color: #ccc;
+}
+
+footer section.copyright {
+    background-color: #253642;
+    padding: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    background-color: #F23459;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 4;
+    transform: scale(0);
+    transition: all .2s;
+}
+
+button.show{
+    transform: scale(1);
+    transition: all .2s;
+}
+
+button svg {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    transition: all .2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+button:hover svg {
+    margin-top: -10px;
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        margin-left: 20px;
+    }
+}

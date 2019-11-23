@@ -1,0 +1,44 @@
+section#demo{
+    margin-top: 100px;
+}
+
+section#demo img {
+    width: 30vw;
+    height: auto;
+}
+
+section#demo div.content{
+    margin-right: 10%;
+    width: 30%;
+}
+
+section#demo div.content button{
+    margin-right: auto;
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    background-color: #FFC555;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 992px) {
+    section#demo div.content{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    section#demo{
+        flex-direction: column;
+    }
+    section#demo img {
+        width: 50vw;
+    }
+    section#demo div.content{
+        width: 80%;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+}

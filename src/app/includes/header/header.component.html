@@ -1,0 +1,18 @@
+<header class="flex nowrap" [ngClass]="{'show-menu': menu}">
+    <div class="logo flex nowrap c-ai">
+        <div routerLink="/" class="app-logo"></div>
+        <div routerLink="/" class="app-title">بادام</div>
+    </div>
+    <div class="menu flex c-ai">
+        <div class="links flex wrap">
+            <div onclick="window.open('https://team.rayda.ir')" class="link">وبلاگ</div>
+            <div class="link" routerLink="/page/download">دانلود</div>
+            <div class="link">امکانات</div>
+            <div class="link" routerLink="/page/pricing">تعرفه ها</div>
+            <div class="link" routerLink="/page/contact">تماس با ما</div>
+            <div class="link" routerLink="/page/about">درباره ما</div>
+        </div>
+        <a class="button">درخواست دمو</a>
+    </div>
+    <div class="menu-button" (click)="menu = !menu"></div>
+</header>

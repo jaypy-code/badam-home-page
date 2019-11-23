@@ -1,0 +1,92 @@
+main {
+    margin-top: 120px;
+    height: 100vh;
+}
+
+section {
+    position: relative;
+    width: 80vw;
+    height: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 1rem;
+    background-color: #2bb5f5;
+}
+
+section div.image {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/lab.jpg');
+    width: 40%;
+    height: 80%;
+}
+
+section div.head {
+    margin-right: 15%;
+}
+
+section div.head h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+section div.head p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+div.app {
+    margin: 10px;
+    min-width: 400px;
+    height: 100%;
+    padding: 10px;
+    border-radius: .4rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+div.app:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+div.app div.column {
+    width: 100%;
+}
+
+div.image {
+    width: 100px;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: 10px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+button {
+    cursor: pointer;
+    margin-right: auto;
+    width: 80px;
+    height: 30px;
+    border-radius: .4rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all .2s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}

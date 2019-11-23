@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./styles/flexbox.css";
+@import "./assets/resource/aos.css";
+
+@font-face {
+    font-family: 'IranSans';
+    src: local('☺'), local('IranSans'), url('./assets/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    border: none;
+    outline: none;
+    user-select: none;
+    font-family: 'IranSans', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+}
+
+div.content h2 {
+    color: #405261;
+    font-size: 2rem;
+}
+
+div.content p {
+    font-size: 1.2rem;
+    color: #556575;
+}
+
+div.inline-content{
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+}
+
+div.inline-content div.content{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.inline-content div.content.center{
+    text-align: center;
+}
+
+div.inline-content div.content h2{
+    color: #1292EE;
+}
+
+div.inline-content img{
+    max-width: 40%;
+    height: auto;
+}
+
+div.quote-content{
+    position: relative;
+    max-width: 800px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 20px;
+    padding-right: 0px;
+    border-radius: .6rem;
+}
+
+div.quote-content.left{
+    margin-right: auto;
+}
+
+div.quote-content.right{
+    margin-left: auto;
+}
+
+div.quote-content p:nth-child(1)::before{
+    content: "";
+    position: relative;
+    top: -10px;
+    right: -10px;
+    left: 20px;
+    background-image: url(/assets/quotation-mark.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+div.quote-content p:nth-child(1){
+    color: #405261;
+    font-size: 1.2rem;
+}
+
+div.quote-content p:nth-child(2){
+    margin-right: auto;
+    color: #56C288;
+}
