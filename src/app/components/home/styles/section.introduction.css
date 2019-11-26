@@ -90,4 +90,7 @@ section#introduction div.content a.social:hover img {
     section#introduction {
         margin: 10vh 5vh;
     }
+    section#introduction img {
+        width: 70vw;
+    }
 }

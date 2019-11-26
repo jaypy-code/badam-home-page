@@ -7,3 +7,9 @@
 @import "./styles/section.plans.css";
 @import "./styles/section.demo.css";
 @import "./styles/section.platform.css";
+
+main.flex{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}

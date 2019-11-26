@@ -77,6 +77,7 @@ section#plans div.plan div.head button{
     }
     section#plans div.plan{
         width: 90vw;
+        margin-right: 15vw;
     }
     section#plans div.line{
         width: 80%;

@@ -13,6 +13,7 @@
     border: none;
     outline: none;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
     font-family: 'IranSans', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -20,6 +21,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+    width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;

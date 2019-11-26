@@ -84,10 +84,13 @@ section#services div.service p {
 }
 
 section#services div.button {
+    text-align: center;
     background-color: #1292EE;
     color: #fff;
-    padding: .75rem 4.375rem;
-    border-radius: .75rem;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: .4rem;
     cursor: pointer;
     transition: all .2s;
 }
@@ -98,6 +101,9 @@ section#services div.button:hover {
 }
 
 @media only screen and (max-width: 992px) {
+    section#services{
+        padding-left: 0 !important;
+    }
     section#services div.content {
         width: 80%;
     }
