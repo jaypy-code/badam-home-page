@@ -71,10 +71,16 @@ section#plans div.plan div.head button{
 @media only screen and (max-width: 1000px) {
     section#plans div.plans{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    section#plans div.plan{
+        width: 90vw;
     }
     section#plans div.line{
-        width: auto;
+        width: 80%;
         height: 2px;
-        margin: 50px 0;
+        margin: 50px auto;
     }
 }
