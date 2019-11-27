@@ -60,7 +60,7 @@ export class AppComponent implements OnInit, OnDestroy {
         },
         body: "<h1>hello world</h1>"
       }, {
-        path: "feature",
+        path: "features",
         head: {
           sticky: true,
           title: "ویژگی ها و امکانات سیستم اتوماسیون تغذیه ی بادام ",

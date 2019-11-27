@@ -98,7 +98,7 @@ section.contact-us button:hover {
 
 @media only screen and (max-width: 600px) {
     section.contact-us div.form {
-        margin-right: 0 !important;
+        margin-right: -5% !important;
         width: 60vw !important;
     }
     section.contact-us div.info {
@@ -117,7 +117,7 @@ section.contact-us button:hover {
         width: 100vw;
     }
     section.contact-us div.form {
-        margin-top: -50px !important;
+        margin-bottom: 100px;
     }
 }
 

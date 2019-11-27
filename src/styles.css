@@ -102,3 +102,21 @@ div.quote-content p:nth-child(2){
     margin-right: auto;
     color: #56C288;
 }
+
+@media only screen and (max-width: 850px) {
+    div.inline-content{
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    div.inline-content img{
+        max-width: 70%;
+        margin-bottom: 30px;
+    }
+    div.inline-content div.content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

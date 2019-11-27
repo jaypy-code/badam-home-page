@@ -28,10 +28,9 @@ section.planing div.content {
 
 div.plans {
     position: relative;
-    width: 100%;
+    width: calc(100% - 40px);
     justify-content: center;
     align-items: flex-start;
-    margin-left: 20px;
     margin-top: 30px;
     padding: 20px;
     overflow-y: hidden;
@@ -124,6 +123,7 @@ section.table {
 section.table div.content {
     text-align: center;
     margin-bottom: 50px;
+    z-index: 2;
 }
 
 section.table div.content h2 {
@@ -131,8 +131,10 @@ section.table div.content h2 {
 }
 
 table {
+    position: relative;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
+    border-spacing: 0;
     background-color: #fff;
     font-size: 1.2rem;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
@@ -140,7 +142,7 @@ table {
     transition: all .2s;
 }
 
-table:hover{
+table:hover {
     box-shadow: transparent;
     transition: all .2s;
 }
@@ -252,4 +254,30 @@ section.table div.background div.c-5 {
     border-radius: 50%;
     background-color: #1292EE;
     z-index: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    section.planing {
+        flex-direction: column;
+    }
+    section.planing div.image {
+        width: 40vw;
+        height: 40vw;
+    }
+    section.planing div.content {
+        width: 80%;
+        max-width: 80%;
+        text-align: center;
+        margin-right: 0;
+    }
+    table{
+        display: block;
+        width: 95vw;
+        overflow-x: auto;
+    }
+    table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+      }
 }
