@@ -2,7 +2,6 @@ section.search {
     position: relative;
     height: 350px;
     padding-top: 100px;
-    padding-right: 15%;
     background-color: #fed271;
     box-shadow: 0 2px 4px rgba(104, 210, 164, 0.548);
 }
@@ -20,15 +19,21 @@ section.search::after {
     height: 60%;
 }
 
+section.search div.container{
+    margin-right: 15%;
+}
+
 section.search h2 {
     color: #314351;
     margin-top: -30px;
+    z-index: 1;
 }
 
 section.search div.search-container {
     position: relative;
-    width: 600px;
+    width: 50%;
     z-index: 1;
+    transition: width .5s;
 }
 
 section.search div.search-container svg {
@@ -74,9 +79,9 @@ section.faq {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100vh;
     background-color: #f1f3f5;
     padding: 50px 0;
+    padding-bottom: 100px;
 }
 
 div.faq {
@@ -204,4 +209,38 @@ div.page:hover{
 div.page.active{
     background-color: #FFC555;
     transition: all .2s;
+}
+
+@media only screen and (max-width: 650px) {
+    section.search{
+        height: 500px;
+        padding-bottom: 20px;
+    }
+    section.search::after {
+        width: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section.search h2{
+        margin-top: 50%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    section.search div.container{
+        margin-left: 15%;
+    }
+    section.search div.search-container {
+        width: 100%;
+    }
+
+    div.faq {
+        width: 80vw;
+    }
+
+    div.faq:first-child{
+        margin-top: -100px;
+    }
 }
