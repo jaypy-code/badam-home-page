@@ -1,5 +1,4 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Observable } from "rxjs"
 
 interface Page {
   path: string,

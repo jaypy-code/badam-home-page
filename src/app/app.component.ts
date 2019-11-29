@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subscription, Observable } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { RayconnectService } from './services/rayconnect/rayconnect.service';
 import { Database } from './services/database/database.service';
 
@@ -95,6 +95,12 @@ export class AppComponent implements OnInit, OnDestroy {
         `
       }
     ]);
+    this.database.downloads = [{
+      name: 'عنوان برنامه',
+      description: 'توضیحات برنامه',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEtd-Z_EnHIq_PikthxHvL5tfYT8QZq1IHFN0bZ_URq5dQuamXmQ&s',
+      link: ''
+    }];
     this.rayconnect.rayconnect.execQuery({
       scope: 'badam',
       uniqueID: 'badam',

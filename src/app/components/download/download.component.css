@@ -1,6 +1,6 @@
 main {
     margin-top: 120px;
-    height: 100vh;
+    margin-bottom: 50vh;
 }
 
 section {
@@ -14,9 +14,9 @@ section {
 }
 
 section div.image {
-    position: absolute;
-    left: 2%;
-    top: 50%;
+    position: relative;
+    right: 5%;
+    top: 40%;
     transform: translateY(-50%);
     content: "";
     background-repeat: no-repeat;
@@ -27,7 +27,8 @@ section div.image {
 }
 
 section div.head {
-    margin-right: 15%;
+    margin-right: 5%;
+    max-width: 40%;
 }
 
 section div.head h1 {
@@ -38,6 +39,11 @@ section div.head h1 {
 section div.head p {
     margin-top: 0;
     font-size: 1.2rem;
+}
+
+div.container{
+    margin: 0 5vw;
+    flex-wrap: wrap;
 }
 
 div.app {
@@ -89,4 +95,49 @@ button {
 button:hover {
     background-color: rgba(0, 0, 0, 0.2);
     transition: all .2s;
+}
+
+@media only screen and (max-width: 480px) {
+    section div.image{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    div.container{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    div.app{
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    section{
+        flex-direction: column;
+        height: 400px;
+        padding-bottom: 30px;
+    }
+
+    section div.image{
+        right: 0;
+    }
+
+    section div.head{
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 0;
+        max-width: 90%;
+    }
+    div.app{
+        min-width: 200px;
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    section{
+        width: 90vw;
+    }
 }
